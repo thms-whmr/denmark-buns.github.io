@@ -104,5 +104,66 @@
             "price": 150,
             "currency": "dkk",
         },
+        {
+            "date": "12.01.2020",
+            "price": 114,
+            "currency": "dkk",
+        },
+        {
+            "date": "13.01.2020",
+            "price": 17.12,
+            "currency": "eur",
+        },
+        {
+            "date": "14.01.2020",
+            "price": 17.12,
+            "currency": "eur",
+        },
+        {
+            "date": "15.01.2020",
+            "price": 17.53,
+            "currency": "eur",
+        },
+        {
+            "date": "16.01.2020",
+            "price": 13.18,
+            "currency": "eur",
+        },
+        {
+            "date": "17.01.2020",
+            "price": 18.13,
+            "currency": "eur",
+        },
+        {
+            "date": "18.01.2020",
+            "price": 23.82,
+            "currency": "eur",
+        },
+        {
+            "date": "03.01.2019",
+            "price": 11.26,
+            "currency": "eur",
+        },
+        {
+            "date": "02.01.2019",
+            "price": 16.80,
+            "currency": "eur",
+        },
+        {
+            "date": "01.01.2019",
+	    "note": "data missing",
+            "price": 0.0,
+            "currency": "eur",
+        },
+        {
+            "date": "31.12.2018",
+            "price": 11.65,
+            "currency": "eur",
+        },
+        {
+            "date": "30.12.2018",
+            "price": 17,
+            "currency": "eur",
+        },
     ]
 }
