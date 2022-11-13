@@ -72,5 +72,37 @@
             "bollaChoco": 1,
             "koerner": 0
         }
+    ],
+    "invoices": [ 
+        {
+            "date": "07.11.2021",
+            "price": 180,
+            "currency": "dkk",
+        },
+        {
+            "date": "08.11.2021",
+            "price": 188,
+            "currency": "dkk",
+        },
+        {
+            "date": "09.11.2021",
+            "price": 168,
+            "currency": "dkk",
+        },
+        {
+            "date": "10.11.2021",
+            "price": 214,
+            "currency": "dkk",
+        },
+        {
+            "date": "11.11.2021",
+            "price": 146,
+            "currency": "dkk",
+        },
+        {
+            "date": "12.11.2021",
+            "price": 150,
+            "currency": "dkk",
+        },
     ]
 }
