@@ -62,6 +62,15 @@
             "bollaNormal": 0,
             "bollaChoco": 0,
             "koerner": 0
+        },
+        {
+            "id": 80,
+            "date": "14.11.2022",
+            "member": "Chris",
+            "kringel": 2,
+            "bollaNormal": 0,
+            "bollaChoco": 1,
+            "koerner": 0
         }
     ]
 }
