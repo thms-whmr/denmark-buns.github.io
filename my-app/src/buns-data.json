@@ -151,7 +151,7 @@
         },
         {
             "date": "01.01.2019",
-			"note": "data missing",
+	    "note": "data missing",
             "price": 0.0,
             "currency": "eur",
         },
