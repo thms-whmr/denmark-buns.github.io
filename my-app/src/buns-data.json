@@ -95,10 +95,5 @@
             "price": 150,
             "currency": "dkk",
         },
-        {
-            "date": "13.11.2021",
-            "price": 150,
-            "currency": "dkk",
-        },
     ]
 }
