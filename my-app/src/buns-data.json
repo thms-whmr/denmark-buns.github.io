@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "id": 10,
+            "date": "13.11.2022",
+            "member": "Tobi",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 20,
+            "date": "13.11.2022",
+            "member": "Charlotte",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 30,
+            "date": "13.11.2022",
+            "member": "Daniel",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 40,
+            "date": "13.11.2022",
+            "member": "Channi",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 50,
+            "date": "13.11.2022",
+            "member": "Chris",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 60,
+            "date": "13.11.2022",
+            "member": "Annika",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 70,
+            "date": "13.11.2022",
+            "member": "Thomas",
+            "kringel": 0,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        }
+    ]
+}
