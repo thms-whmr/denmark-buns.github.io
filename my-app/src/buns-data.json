@@ -64,11 +64,65 @@
             "koerner": 0
         },
         {
-            "id": 80,
+            "id": 110,
+            "date": "14.11.2022",
+            "member": "Tobi",
+            "kringel": 1,
+            "bollaNormal": 1,
+            "bollaChoco": 1,
+            "koerner": 0
+        },
+        {
+            "id": 120,
+            "date": "14.11.2022",
+            "member": "Charlotte",
+            "kringel": 2,
+            "bollaNormal": 1,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 140,
+            "date": "14.11.2022",
+            "member": "Daniel",
+            "kringel": 3,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 140,
+            "date": "14.11.2022",
+            "member": "Channi",
+            "kringel": 3,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 150,
             "date": "14.11.2022",
             "member": "Chris",
-            "kringel": 2,
+            "kringel": 0,
             "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 0
+        },
+        {
+            "id": 160,
+            "date": "14.11.2022",
+            "member": "Annika",
+            "kringel": 1,
+            "bollaNormal": 0,
+            "bollaChoco": 0,
+            "koerner": 1
+        },
+        {
+            "id": 170,
+            "date": "14.11.2022",
+            "member": "Thomas",
+            "kringel": 1,
+            "bollaNormal": 1,
             "bollaChoco": 1,
             "koerner": 0
         }
