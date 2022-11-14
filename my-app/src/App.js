@@ -1,20 +1,29 @@
 import './App.css';
 import React from 'react';
 import DataTable from 'react-data-table-component';
-import FilterComponent from 'react-data-table-component';
+
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
 import Data from './buns-data.json';
 
-console.log(Data);
-
-
 // Data from JSON file
-const data = Data.members;
+let members = Data.members;
 
 // Columns to be displayed
 const columns = [
   {
     name: 'Date',
     selector: row => row.date,
+    sortable: true,
   },
 
   {
@@ -44,39 +53,94 @@ const columns = [
   }
 ];
 
-function App() {
+let invoices = Data.invoices;
 
-    // Questionable stuff
-    /*
-    const [filterText, setFilterText] = React.useState('');
-    const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
-    const filteredItems = data.filter(
-      item => item.name && item.name.toLowerCase().includes(filterText.toLowerCase()),
-    );
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-    const subHeaderComponentMemo = React.useMemo(() => {
-      const handleClear = () => {
-        if (filterText) {
-          setResetPaginationToggle(!resetPaginationToggle);
-          setFilterText('');
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Ordered value',
+    },
+  },
+};
+
+const labels = invoices.map(item => item.date);
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'Data',
+      data: invoices.map(
+        (item) => {
+          if (item.currency.toUpperCase() === 'DKK')
+            return item.price * 0.13;
+
+          return item.price;
+        }),
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    }
+  ],
+};
+
+class FilterButton extends React.Component {
+
+  constructor(){
+    super();
+    this.name = '';
+    this.value = '';
+  }
+
+  onApplyFilter() {
+    members = members.map(
+      member => {
+        if (new Date(member.date).getFullYear() === InputEvent.target.value) {
+          return member;
         }
-      };
+      }
+    );
+  }
 
-      return (
-        <FilterComponent onFilter={e => setFilterText(e.target.value)} onClear={handleClear} filterText={filterText} />
-      );
-    }, [filterText, resetPaginationToggle]);
+  render(){
+    return(
+      <input/>
+    )
+  }
 
-    */
-    return (
+}
+
+function App() {
+  return (
+    <div>
+      <div>
+        <label>
+          Year:
+          <FilterButton name='Year' type={'search'} onChange={FilterButton.onApplyFilter} value={FilterButton.value}/>
+        </label>
+      </div>
       <div>
         <DataTable
           title="Buns order list"
-          data={data}
-          columns={columns}
-          //subHeaderComponent={subHeaderComponentMemo} 
-          />
+          data={members}
+          columns={columns} />
       </div>
-    )
-  }
+      <div>
+        <Bar options={options} data={data} />
+      </div>
+    </div>
+  )
+}
 export default App;
